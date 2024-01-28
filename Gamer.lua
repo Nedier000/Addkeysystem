@@ -66,6 +66,15 @@ Tab:AddButton({
 		elif _G.KeyInput == "Gw861" then
 			keydung()
 			kdtb()
+		elif _G.KeyInput == 82585 then
+			keydung()
+			kdtb()
+		elif _G.KeyInput == 87629 then
+			keydung()
+			kdtb()
+		elif _G.KeyInput == 967296 then
+			keydung()
+			kdtb()
 		else
 			kstb()
         end
@@ -76,7 +85,7 @@ Tab:AddButton({
 	Name = "GetKey",
 	Callback = function()
       		local textToCopy = _G.GetKey
-			script.Parent.MouseButton1Click:Connect(function()	
+			MouseButton1Click:Connect(function()	
 			    GuiService.Clipboard = textToCopy
 			    print("Đã copy vào clipboard: " .. textToCopy)
 				sck()
@@ -86,15 +95,4 @@ Tab:AddButton({
 
 local in4 = Window:MakeTab({
 	Name = "In4",
-	Icon = "",
-	PremiumOnly = false
-})
-
-in4:AddButton({
-	Name = "Make By MinhLts!",
-	Callback = function()
-      		print("buii")
-  	end    
-})
-
-OrionLib:Init()
+	
