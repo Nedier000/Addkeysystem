@@ -12,7 +12,9 @@ OrionLib:MakeNotification({
 _G.KeyInput = "string"
 
 function keydung()
-	print("hihi")
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Gamer144roblox/Gamer144-hub-v2/main/Flo888"))()
+	wait(3)
+	OrionLib:Destroy()
 end
 
 function kdtb()
@@ -63,18 +65,6 @@ Tab:AddButton({
         if _G.KeyInput == _G.Key then
             keydung()
 			kdtb()
-		elif _G.KeyInput == "Gw861" then
-			keydung()
-			kdtb()
-		elif _G.KeyInput == 82585 then
-			keydung()
-			kdtb()
-		elif _G.KeyInput == 87629 then
-			keydung()
-			kdtb()
-		elif _G.KeyInput == 967296 then
-			keydung()
-			kdtb()
 		else
 			kstb()
         end
@@ -84,12 +74,14 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "GetKey",
 	Callback = function()
-      		local textToCopy = _G.GetKey
-			MouseButton1Click:Connect(function()	
-			    GuiService.Clipboard = textToCopy
-			    print("Đã copy vào clipboard: " .. textToCopy)
-				sck()
-            end)
+		Tab:AddTextbox({
+			Name = "Link Get Key:",
+			Default = _G.GetKey,
+			TextDisappear = false,
+			Callback = function(Value)
+				print(Value)
+			end	  
+		})
   	end    
 })
 
@@ -102,7 +94,7 @@ local in4 = Window:MakeTab({
 in4:AddButton({
 	Name = "Make By MinhLts!",
 	Callback = function()
-      		print("buii")
+      	print("buii")
   	end    
 })
 
