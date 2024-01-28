@@ -74,14 +74,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "GetKey",
 	Callback = function()
-		Tab:AddTextbox({
-			Name = "Link Get Key:",
-			Default = _G.GetKey,
-			TextDisappear = false,
-			Callback = function(Value)
-				print(Value)
-			end	  
-		})
+		setclipboard(_G.GetKey)
   	end    
 })
 
