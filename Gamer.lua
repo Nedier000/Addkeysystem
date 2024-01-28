@@ -12,7 +12,7 @@ OrionLib:MakeNotification({
 _G.KeyInput = "string"
 
 function keydung()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Gamer144roblox/Gamer144-hub-v2/main/Gamer144"))()
+	print("hihi")
 end
 
 function kdtb()
@@ -95,4 +95,15 @@ Tab:AddButton({
 
 local in4 = Window:MakeTab({
 	Name = "In4",
-	
+	Icon = "",
+	PremiumOnly = false
+})
+
+in4:AddButton({
+	Name = "Make By MinhLts!",
+	Callback = function()
+      		print("buii")
+  	end    
+})
+
+OrionLib:Init()
